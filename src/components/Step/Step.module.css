@@ -1,0 +1,69 @@
+form {
+  width: 540px;
+  height: 288px;
+}
+
+
+.formTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.formRow {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    'title title name name name name'
+    'tel tel tel mail mail mail'
+    'county county address address address address';
+}
+
+.titleGroup {
+  width: 160px;
+  grid-area: title;
+}
+
+.nameGroup {
+  width: 350px;
+  grid-area: name;
+}
+
+.telGroup {
+  width:255px;
+  grid-area: tel;
+}
+
+.mailGroup {
+  width: 260px;
+  grid-area: mail;
+}
+
+.countyGroup {
+  width: 160px;
+  grid-area: county;
+}
+
+.addressGroup {
+  width: 350px;
+  grid-area: address;
+}
+
+select,
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #4A4A4A;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 12px;
+}
+
+.inputLabel {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #808080;
+}

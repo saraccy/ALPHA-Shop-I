@@ -1,0 +1,22 @@
+.progressControlContainer {
+  border-top: 1px solid #e6e6eb;
+  width: 540px ;
+  margin-top: 48px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.nextBtn {
+  width: 174px;
+  height: 46px;
+  border-radius: 8px;
+  background-color: #f67599;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+}
+

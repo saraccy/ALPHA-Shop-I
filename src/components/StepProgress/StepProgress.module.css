@@ -1,0 +1,40 @@
+.registerTitle {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.progressContainer {
+  display: flex;
+  padding: 20px 0;
+  width: 536px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressGroup {
+  display: flex;
+  align-items: center;
+  
+}
+
+.progressIcon {
+  position: relative;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.progressNum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  color:#FFFFFF;
+}
+
+.progressBar {
+  border: 1px solid #000000;
+  width: 60px;
+}
+
