@@ -1,3 +1,4 @@
+import styles from './Step.module.css'
 import StepOne from "./StepOne"
 // import StepTwo from "./StepTwo"
 // import StepThree from "./StepThree"
@@ -5,7 +6,8 @@ import StepOne from "./StepOne"
 export default function AllStep() {
   return(
     <>
-      <section className="form-container col col-12">
+      <section className={styles.formContainer}>
+        
         {/* address phase */}
         <StepOne/>
         
