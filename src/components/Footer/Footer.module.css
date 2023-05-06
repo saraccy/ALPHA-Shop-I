@@ -1,0 +1,59 @@
+.siteFooter {
+  margin-top: 120px;
+  background-color:#F6F7F8;
+  padding: 0 16px;
+}
+
+.footerContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  
+}
+
+.footerLogoContainer {
+  margin-top: 126px;
+  margin-bottom: 127px;
+  display: flex;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  color: #2A2A2A;
+  font-weight: bold;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.pageLink {
+  margin-bottom: 8px;
+  font-weight: normal;
+  line-height: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #808080;
+}
+
+.telInfo {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #808080;
+}
+
+.socialIconGroup {
+  display: flex;
+}
+
+.socialIcon {
+  margin-right: 16px;
+}
