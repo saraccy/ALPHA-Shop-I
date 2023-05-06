@@ -1,8 +1,6 @@
-form {
-  width: 540px;
-  height: 288px;
+.formTitle {
+  margin-top: 64px;
 }
-
 
 .formTitle {
   font-size: 24px;
