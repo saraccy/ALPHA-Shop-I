@@ -16,13 +16,14 @@
   max-width: 60px;
   height: 1px;
   margin: 0px 8px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
 }
 
 
 .progressGroup {
   display: flex;
+  align-items: center;
 }
 
 .progressIcon {
@@ -34,7 +35,8 @@
   border-radius: 50%;
 }
 
-.progressNum {
+.progressOne,
+.completeNum {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,4 +44,41 @@
   font-size: 12px;
   font-weight: 700;
   color: #FFFFFF;
+}
+.progressNum{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  color: #2A2A2A;
+}
+
+.pgUndone {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #AFB1BD;
+}
+
+.pgInProgress {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #2A2A2A;
+}
+
+.UndoneNum {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  color:#AFB1BD
 }
