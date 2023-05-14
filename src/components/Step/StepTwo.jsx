@@ -3,7 +3,7 @@ import styles from "../Step/Step.module.css";
 function StepTwoGroup({dataPrice, id, checked, title, price, period}) {
   return (
     <label className={styles.radioGroup} data-price={dataPrice}>
-      <input id={id} type="radio" name="shipping" checked={checked} />
+      <input id={id} type="radio" name="shipping" defaultChecked={checked} />
       <div className={styles.radioInfo}>
         <div className={styles.radioTitle}>
           <div className={styles.radioText}>{title}</div>
