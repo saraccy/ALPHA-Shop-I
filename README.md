@@ -1,4 +1,4 @@
-# A3: ALPHA Shop I：元件拆分
+# ALPHA Shop 
 
 ---
 
