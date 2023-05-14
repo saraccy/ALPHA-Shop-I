@@ -23,3 +23,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+.registerContainer {
+  width:50%
+}
