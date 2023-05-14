@@ -1,39 +1,58 @@
-import styles from './ProgressControl.module.css'
-export default function ProgressControl(){
+import RightArrowIcon from '../../icons/right-arrow.svg';
+import LeftArrowIcon from '../../icons/left-arrow.svg';
+
+import styles from './ProgressControl.module.css';
+
+
+
+export default function ProgressControl({onClickStep,stepNum}){
   return(
     <>
        <section className={styles.progressControlContainer}>
-          <section className={styles.buttonGroup}  data-phase="address">
-            <button className={styles.nextBtn}>
-              下一步 →
-            </button>
-          </section>
-          {/* <section className="button-group col col-12" data-phase="shipping">
-            <button className="prev">
-              <svg className="cursor-point">
-                <use xlinkHref="#svg-icon-left-arrow" />
-              </svg>
-              上一步
-            </button>
-            <button className="next">
-              下一步
-              <svg className="cursor-point">
-                <use xlinkHref="#svg-icon-right-arrow" />
-              </svg>
-            </button>
-          </section>
-          <section className="button-group col col-12" data-phase="credit-card">
-            <button className="prev">
-              <svg className="cursor-point">
-                <use xlinkHref="#svg-icon-left-arrow" />
-              </svg>
-              上一步
-            </button>
-            <button className="next">
-              確認下單
-            </button>
-          </section> */}
+        {stepNum === 1 && <StepOneBtn onClickStep={onClickStep} />}
+        {stepNum === 2 && <StepTwoBtn onClickStep={onClickStep} />}
+        {stepNum === 3 && <StepThreeBtn onClickStep={onClickStep} />}
         </section>
     </>
+  )
+}
+
+function StepOneBtn({onClickStep}) {
+  return(
+    <section className={styles.buttonGroupOne}  data-phase="address">
+      <button className={styles.nextBtn} onClick={onClickStep}>
+        下一步 
+        <img src={RightArrowIcon} alt="" />
+      </button>
+    </section>
+  )
+}
+
+function StepTwoBtn({onClickStep}) {
+  return(
+    <section className={styles.buttonGroupTwo} data-phase="shipping">
+      <button className={styles.previousBtn} onClick={onClickStep} >
+        <img src={LeftArrowIcon} alt="" />
+        上一步
+      </button>
+      <button className={styles.nextBtn} onClick={onClickStep}>
+        下一步
+        <img src={RightArrowIcon} alt="" />
+      </button>
+    </section>
+  )
+}
+
+function  StepThreeBtn({onClickStep}) {
+  return(
+    <section className={styles.buttonGroupTwo} data-phase="credit-card">
+      <button className={styles.previousBtn} onClick={onClickStep} >
+        <img src={LeftArrowIcon} alt="" />
+        上一步
+      </button>
+      <button className={styles.nextBtn} >
+        確認下單
+      </button>
+    </section>
   )
 }
