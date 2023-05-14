@@ -1,13 +1,16 @@
 .formTitle {
   margin-top: 64px;
-}
-
-.formTitle {
   font-size: 24px;
   font-weight: 700;
 }
 
+.formBodyOne,
+.formBodyTwo,
+.formBodyThree {
+  width: 100%;
+}
 
+/* Step 1 */
 .formRow {
   margin-top: 24px;
   display: grid;
@@ -64,4 +67,94 @@ input {
   font-size: 12px;
   font-weight: 700;
   color: #808080;
+}
+
+/* Step 2 */
+
+
+.radioGroup {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 11px 20px;
+  border-radius: 4px;
+  margin-top: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radioBoxBorder{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 4px;
+  border: 1px solid #f0f0f5 ;
+}
+
+.radioBoxBorder:hover {
+  border: 1px #2a2a2a solid;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+  border-radius: 50%;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type="radio"]:checked {
+  box-shadow: inset 0px 0px 0px 5px #2A2A2A;
+}
+
+.radioInfo {
+  width: 100%
+}
+
+.radioTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radioText {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.radioprice {
+  font-size: 12px;
+}
+
+.radioperiod {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Step 3 */
+.StepThreeContainer .formTitle {
+  margin-bottom: 24px;
+}
+
+.areaOne {
+  width: 90%;
+  margin-bottom: 24px;
+}
+
+.areaOne .inputGroup {
+  width:72%;
+}
+.areaTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.areaTwo .inputGroup {
+  width: 47%;
 }

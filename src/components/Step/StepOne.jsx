@@ -60,7 +60,7 @@ export default function StepOne() {
       <form className="col col-12" data-phase="address">
         <h3 className={styles.formTitle}>寄送地址</h3>
         
-        <section className={styles.formBody}>
+        <section className={styles.formBodyOne}>
 
           <div className={styles.formRow}>
 

@@ -1,21 +1,22 @@
-import styles from './Step.module.css'
-import StepOne from "./StepOne"
-// import StepTwo from "./StepTwo"
-// import StepThree from "./StepThree"
+import styles from './Step.module.css';
+import StepOne from "./StepOne";
+import StepTwo from "./StepTwo";
+import StepThree from "./StepThree"
 
-export default function AllStep() {
+
+export default function AllStep({stepNum}) {
   return(
     <>
       <section className={styles.formContainer}>
         
         {/* address phase */}
-        <StepOne/>
+        {stepNum === 1 && <StepOne/>}
         
         {/* shipping phase */}
-        {/* <StepTwo/> */}
+        {stepNum === 2 && <StepTwo/>}
 
         {/* credit-card phase */}
-        {/* <StepThree/> */}
+        {stepNum === 3 && <StepThree/>}
       </section>
     </>
   )
