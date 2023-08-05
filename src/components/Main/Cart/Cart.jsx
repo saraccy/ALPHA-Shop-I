@@ -2,6 +2,7 @@ import  { ReactComponent as PlusBtn } from '../../../icons/plus.svg' ;
 import  { ReactComponent as MinusBtn } from '../../../icons/minus.svg';
 import styles from '../Cart/Cart.module.css';
 import CartContext  from '../Context/CartContext';
+import ShippingContext from '../Context/ShippingContext';
 import { useContext } from 'react';
 
 function Product({item}) {
@@ -31,7 +32,10 @@ function Product({item}) {
 
 function Cart() {
   const {nowCartData} = useContext(CartContext);
+  const { selectedOption } = useContext(ShippingContext);
   const {total} = useContext(CartContext);
+  const shippingPrice = Number(selectedOption)
+  const totalPrice = total + shippingPrice;
   return(
     <>
       <section className={styles.cartContainer}>
@@ -47,11 +51,11 @@ function Cart() {
         </section>
         <section className={styles.cartInfo}>
           <div className={styles.cartText}>運費</div>
-          <div className={styles.cartPrice}>免費</div>
+          <div className={styles.cartPrice}>${shippingPrice}</div>
         </section>
         <section className={styles.cartInfo}>
           <div className={styles.cartText}>小計</div>
-          <div className={styles.cartPrice}>${total}</div>
+          <div className={styles.cartPrice}>${totalPrice}</div>
         </section>
       </section>
     </>

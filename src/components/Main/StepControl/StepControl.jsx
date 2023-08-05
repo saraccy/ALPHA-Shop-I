@@ -3,15 +3,18 @@ import { ReactComponent as RightArrow } from "../../../icons/right-arrow.svg";
 import styles from './StepControl.module.css';
 import StepThreeContext from '../Context/CreditCardContext';
 import CartContext from '../Context/CartContext';
+import ShippingContext from "../Context/ShippingContext";
 import { useContext } from 'react';
 
  function StepControl({handleLeftClick, handleRightClick, stepNum }) {
 
   const { data } = useContext(StepThreeContext);
   const {total} =  useContext(CartContext);
+  const { selectedOption } = useContext(ShippingContext);
+  const finalTotal = total + Number(selectedOption);
   function handleConfirmClick() {
     console.log(`
-      購物車總金額:$ ${total}
+      購物車總金額:$ ${finalTotal}
       持卡人姓名:${data.cardName} 
       卡號：${data.cardNumber} 
       有效期限：${data.date} 
