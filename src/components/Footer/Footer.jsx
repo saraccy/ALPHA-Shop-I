@@ -1,5 +1,5 @@
-import styles from './Footer.module.css'
-import logo from '../../icons/logo.svg'
+import styles from './Footer.module.css';
+import logo from '../../icons/logo.svg';
 import facebook from '../../icons/facebook.svg'
 import instagram from '../../icons/instagram.svg'
 import whatsapp from '../../icons/whatsapp.svg'
@@ -27,7 +27,7 @@ export default function Footer() {
       <footer className={styles.siteFooter}>
         <div className={styles.footerContainer}>
           <div className={styles.footerLogoContainer}>
-            <img src={logo} alt="" />
+            <img className={styles.logoIcon} src={logo} alt="" />
           </div> 
           <FooterSection section={contentOne} title={"客戶服務"}/>
           <FooterSection section={contentTwo} title={"關於我們"}/>

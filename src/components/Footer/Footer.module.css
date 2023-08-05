@@ -17,6 +17,11 @@
   display: flex;
 }
 
+.logoIcon {
+  width: 175px;
+  height: 31px;
+}
+
 .footerSection {
   display: flex;
   flex-direction: column;
