@@ -1,0 +1,48 @@
+.formContainer {
+  margin-top: 64px;
+  width: 540px;
+}
+
+.formTitle {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: Noto Sans TC;
+  font-weight: 700;
+}
+
+.containerOne {
+  margin-bottom: 24px;
+}
+
+.containerTwo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputLabel {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  color: #808080;
+}
+
+.containerOne .inputGroup {
+  width: 350px;
+  color: #808080;
+}
+
+.containerTwo .inputGroup {
+  width: 255px;
+}
+
+.stepThreeText {
+  padding-left: 16px;
+}
+
+.stepThreeText::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+}

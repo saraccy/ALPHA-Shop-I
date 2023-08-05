@@ -1,0 +1,6 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto ;
+  width: 90%;
+}

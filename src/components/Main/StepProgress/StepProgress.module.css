@@ -1,0 +1,87 @@
+.registerTitle {
+  margin-bottom: 48px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.progressContainer {
+  width: 536px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.progressGroup {
+  width: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepOneIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2A2A2A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nowIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #2A2A2A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2A2A2A;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.undoneIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #AFB1BD;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AFB1BD;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.unDoneProgressBar {
+  display: flex;
+  flex-grow: 1;
+  width: 60px;
+  height: 1px;
+  margin: 0px 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #AFB1BD;
+}
+
+.doneProgressBar {
+  display: flex;
+  flex-grow: 1;
+  width: 60px;
+  height: 1px;
+  margin: 0px 32px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.undoneLabel {
+  color: #AFB1BD;
+}

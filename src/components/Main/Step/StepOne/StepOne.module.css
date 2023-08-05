@@ -1,0 +1,35 @@
+.formTitle {
+  width: 96px;
+  margin-bottom: 24px;
+  font-size:24px;
+  font-weight: 700;
+}
+
+.formBody {
+  width: 540px;
+}
+
+.lineOne, .lineThree {
+  display: grid;
+  grid-template-rows: 64px;
+  grid-template-columns: 160px 350px;
+  grid-gap: 30px;
+  margin-bottom: 24px;
+}
+
+.lineTwo {
+  display: grid;
+  grid-template-rows: 64px;
+  grid-template-columns: 255px 266px;
+  grid-gap: 19px;
+  margin-bottom: 24px;
+}
+
+input, select {
+  width: 100%;
+  height: 40px;
+}
+
+.inputLabel {
+  margin-bottom: 8px;
+}

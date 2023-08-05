@@ -1,0 +1,59 @@
+.progressControlContainer {
+  width: 540px;
+  border-top: 2px solid #E6E6EB;
+  /* margin-top: 24px; */
+  padding-top: 24px;
+}
+
+.buttonGroupOne {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.buttonGroupTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preBtn {
+  display: flex;
+  align-items: center;
+  width: 174px;
+  height: 46px;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.nextBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 46px;
+  background-color: #F67599;
+  border-radius: 8px;
+  border: none;
+  font-family: Inter, sans-serif;;
+  font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.leftArrow {
+  margin-right: 12px;
+}
+
+.rightArrow {
+  margin-left: 12px;
+}
+
+.cursorPoint {
+  width: 20.5px;
+}
+

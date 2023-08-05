@@ -1,0 +1,74 @@
+.formContainer {
+  margin-top: 64px;
+  width: 435px;
+}
+
+.formTitle {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: Noto Sans TC;
+  font-weight: 700;
+}
+
+.radioGroup {
+  margin-bottom: 24px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 435px;
+  height: 60px;
+  border: 1px solid #F0F0F5;
+  border-radius: 4px;
+}
+
+.radioGroup:hover {
+  border: 1px #2A2A2A solid;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+  border-radius: 50%;
+  border: 1px solid #222222;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  box-shadow: inset 0 0 0 4px #2A2A2A;
+}
+
+.radioInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dhlText {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.price, .period {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.period {
+  margin-top: 2px;
+}
+
