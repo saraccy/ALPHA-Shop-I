@@ -8,6 +8,7 @@ import StepControl from './StepControl/StepControl.jsx';
 import { useState } from 'react';
 import { StepThreeProvider } from './Context/CreditCardContext';
 import { CartProvider }  from './Context/CartContext';
+import { ShippingProvider } from './Context/ShippingContext.jsx';
 
 function Main() {
   const [step, setStep] = useState(1);
@@ -22,6 +23,7 @@ function Main() {
     <main className={styles.siteMain}>
       <CartProvider>
       <StepThreeProvider>
+      <ShippingProvider>
       <div className={styles.mainContainer}>
         <section className={styles.registerContainer} data-phase="1" data-total-price="0">
           <StepProgress nowStep={step}/>
@@ -38,6 +40,7 @@ function Main() {
         handleRightClick={handleRightClick}
         stepNum = {step}
       />
+      </ShippingProvider>
       </StepThreeProvider>
       </CartProvider>
     </main>
